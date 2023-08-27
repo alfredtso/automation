@@ -1,0 +1,6 @@
+---
+- hosts: "{{ instance }}"
+  become: true
+  gather_facts: false
+  roles:
+    - install_packages 
